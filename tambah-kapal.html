@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPTD Kelas III Kalimantan Utara</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        .sidebar {
+            background-color: #fff;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .main-content {
+            background-color: #fff;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+        .logo {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+        .table-container {
+            background-color: #343a40;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar p-3">
+                <div class="d-flex align-items-center mb-4">
+                    <img src="logo/logo dishub.png" alt="Logo" class="logo">
+                    <div class="header-title">
+                        BPTD Kelas III<br>Kalimantan Utara
+                    </div>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-calendar-alt me-2"></i> Manajemen Jadwal Kapal
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <i class="fas fa-ship me-2"></i> Manajemen Data Kapal
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col-md-10 main-content p-0">
+                <div class="header">
+                    <h2 class="text-center m-0">SELAMAT DATANG</h2>
+                </div>
+                <div class="container mt-4">
+                    <h3><i class="fas fa-bars me-2"></i> Manajemen Data Kapal</h3>
+                    <div class="table-container">
+                        <i class="text-center m-0"></i> Form Penambahan Data Kapal
+                    </button>
+                </div>
+
+                <div class="form-container p-4">
+                    <form>
+                        <div class="mb-3 row">
+                            <label for="namaKapal" class="col-sm-3 col-form-label">Nama Kapal</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="namaKapal">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="GT" class="col-sm-3 col-form-label">GT</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="GT">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="bendera" class="col-sm-3 col-form-label">Bendera</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="bendera">
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-dark">SAVE</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
